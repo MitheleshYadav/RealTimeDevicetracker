@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:8080");
+const socket = io("real-time-devicetracker-bakend.vercel.app");
 
 // Custom icon
 const defaultIcon = L.icon({
