@@ -21,10 +21,10 @@ io.on('connection',(socket)=>{
         user[socket.id] = data;
         io.emit('toAll',user);
     })
-    socket.on('disconnect',()=>{
-        delete user[socket.id];
-        io.emit('toAll', user);
-    })
+    // socket.on('disconnect',()=>{
+    //     delete user[socket.id];
+    //     io.emit('toAll', user);
+    // })
 })
 
 
